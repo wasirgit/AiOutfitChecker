@@ -67,7 +67,6 @@ struct SettingsView: View {
                         .foregroundColor(.secondary)
                 }
             }
-            .navigationTitle("Settings")
         }
     }
 }

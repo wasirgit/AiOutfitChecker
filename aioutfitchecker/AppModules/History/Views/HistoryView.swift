@@ -41,7 +41,6 @@ struct HistoryView: View {
                     .listStyle(.plain)
                 }
             }
-            .navigationTitle("History")
         }
     }
 }
