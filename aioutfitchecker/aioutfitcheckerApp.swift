@@ -1,17 +1,17 @@
 //
-//  aioutfitcheckerApp.swift
-//  aioutfitchecker
+//  AIOutfitCheckerApp.swift
+//  AIOutfitChecker
 //
-//  Created by Israt Jahan Simu on 2/4/26.
+//  App Entry Point
 //
 
 import SwiftUI
 
 @main
-struct aioutfitcheckerApp: App {
+struct AIOutfitCheckerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }

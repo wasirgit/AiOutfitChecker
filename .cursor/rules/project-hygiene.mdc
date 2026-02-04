@@ -1,0 +1,22 @@
+---
+description: Rules for maintaining project structure, file management, and avoiding unnecessary files.
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Project Hygiene & Structure
+
+## File Management
+- **No Documentation Bloat:** Do not create `.md`, `README` updates, or architectural diagrams unless explicitly requested.
+- **Clean Deletions:** When refactoring, suggest deleting unused files immediately.
+- **Grouping:** Maintain a logical folder hierarchy consistent with standard Xcode project structures.
+
+## AI Interaction Guidelines
+- **Be Concise:** Provide code first, explanation second.
+- **Incremental Changes:** Propose small, testable changes rather than rewriting entire files.
+- **Linter Awareness:** Follow standard SwiftLint rules (short lines, no trailing whitespace) even if a linter isn't installed.
+
+## Forbidden Patterns
+- No "Manager" classes that hold global state (prefer Dependency Injection).
+- No over-abstraction of simple UI components.
+- No boilerplate-heavy patterns like Coordinator if the native `NavigationStack` handles the requirement.
