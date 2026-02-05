@@ -216,7 +216,10 @@ struct HomeView: View {
         }
         .fullScreenCover(isPresented: $showResult) {
             if let result = viewModel.analysisResult {
-                ResultView(outfit: result) {
+                ResultView(
+                    outfit: result,
+                    analyzedImage: viewModel.selectedImage
+                ) {
                     viewModel.reset()
                 }
             }

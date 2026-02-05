@@ -17,6 +17,5 @@ alwaysApply: true
 - **Linter Awareness:** Follow standard SwiftLint rules (short lines, no trailing whitespace) even if a linter isn't installed.
 
 ## Forbidden Patterns
-- No "Manager" classes that hold global state (prefer Dependency Injection).
 - No over-abstraction of simple UI components.
 - No boilerplate-heavy patterns like Coordinator if the native `NavigationStack` handles the requirement.
